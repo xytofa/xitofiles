@@ -14,7 +14,7 @@
   users.users.mikail = {
     isNormalUser = true;
     description = "Mikail";
-    extraGroups = [ "networkmanager" "wheel" "sudo" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
 
