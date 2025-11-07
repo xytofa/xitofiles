@@ -1,5 +1,5 @@
 # /etc/nixos/configurations/modules/desktop.nix
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   networking = {
