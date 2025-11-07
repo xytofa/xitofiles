@@ -1,5 +1,5 @@
 # /etc/nixos/configurations/modules/settings.nix
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   nix = {
