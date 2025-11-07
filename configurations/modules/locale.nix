@@ -1,5 +1,5 @@
 # /etc/nixos/configurations/modules/locale.nix
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   time.timeZone = "Europe/Berlin";
