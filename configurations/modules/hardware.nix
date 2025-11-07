@@ -1,5 +1,5 @@
 # /etc/nixos/configurations/modules/hardware.nix
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   hardware = {
