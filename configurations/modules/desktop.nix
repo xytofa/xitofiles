@@ -20,15 +20,18 @@
 
   security = {
     rtkit.enable = true;
-    polkit.enable = true;
+
   };
 
   services = {
-    displayManager.sddm = {
-      enable = true;
-    };
 
-    desktopManager.plasma6.enable = true;
+    displayManager = {
+      cosmic-greeter.enable = true;
+      };
+
+    desktopManager = {
+      cosmic.enable = true;
+      };
 
     pipewire = {
       enable = true;
