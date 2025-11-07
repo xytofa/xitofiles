@@ -1,5 +1,5 @@
 # /etc/nixos/configurations/modules/packages.nix
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   environment = {
