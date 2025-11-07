@@ -24,16 +24,6 @@
   };
 
   services = {
-    xserver = {
-      enable = true;
-      videoDrivers = [ "nvidia" ];
-
-      xkb = {
-        layout = "de";
-        variant = "";
-      };
-    };
-
     displayManager.sddm = {
       enable = true;
     };
