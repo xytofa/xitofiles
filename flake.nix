@@ -11,7 +11,8 @@
     nixosConfigurations.demir = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./configurations/main.nix
+        ./configurations/configuration.nix
+        # last before, this was ./configurations/main.nix
 
         ({ config, pkgs, ... }: {
           nixpkgs.config.allowUnfree = true;
