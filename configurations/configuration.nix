@@ -1,4 +1,3 @@
-# this is the current config file i am and will use as it is simpler
 { config, pkgs, ... }:
 
 {
