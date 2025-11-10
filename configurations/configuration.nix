@@ -2,12 +2,17 @@
 { config, pkgs, ... }:
 
 {
-  boot.loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-      kernelPackages = pkgs.linuxPackages_latest;
+  boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
+  
+    loader = {
+        systemd-boot.enable = true;
+        efi.canTouchEfiVariables = true;
     };
-    
+  };
+
+  security.rtkit.enable = true;
+
   networking = {
     hostName = "demir";
     networkmanager.enable = true;
