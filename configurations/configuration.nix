@@ -4,14 +4,16 @@
 {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
-  
+
     loader = {
         systemd-boot.enable = true;
         efi.canTouchEfiVariables = true;
     };
   };
 
+
   security.rtkit.enable = true;
+
 
   networking = {
     hostName = "demir";
@@ -21,7 +23,8 @@
       enable = true;
     };
   };
-  
+
+
   users.users.mikail = {
     isNormalUser = true;
     description = "Mikail";
@@ -44,7 +47,8 @@
       mangohud
     ];
   };
-  
+
+
   hardware = {
     cpu = {
       intel.updateMicrocode = true;
@@ -63,11 +67,25 @@
       powerManagement.enable = true;
     };
   };
-  
-  services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-  
+
+
+  services = {
+    xserver = {
+      enable = true;
+    };
+
+    displayManager.sddm.enable = true;
+    desktopManager.plasma6.enable = true;
+
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
+  };
+
+
   time.timeZone = "Europe/Berlin";
   console.keyMap = "de";
 
@@ -86,7 +104,8 @@
       LC_TIME = "de_DE.UTF-8";
     };
   };
-  
+
+
   environment = {
     plasma6.excludePackages = with pkgs.kdePackages; [
       konsole
@@ -119,11 +138,13 @@
     ];
   };
 
+
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.zed-mono
   ];
-  
+
+
   nix = {
     gc = {
       automatic = true;
