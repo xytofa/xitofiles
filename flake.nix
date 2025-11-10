@@ -10,13 +10,13 @@
 
     nixosConfigurations.demir = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+
       modules = [
         ./configurations/configuration.nix
-        # last before, this was ./configurations/main.nix
 
         ({ config, pkgs, ... }: {
           nixpkgs.config.allowUnfree = true;
-          nix.settings.experimental-features = [ "nix-command" "flakes" ];
+          system.stateVersion = "25.05";
         })
       ];
     };
