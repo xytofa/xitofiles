@@ -1,17 +1,17 @@
 ```
-┌── flake.nix
-├── machine.nix
-└── modules/
-    ├── display/
-    │   └── desktop.nix
-    ├── services/
-    │   ├── audio.nix
-    │   ├── apps.nix
-    │   └── core.nix
-    ├── system/
-    │   ├── boot.nix
-    │   ├── locale.nix
-    │   └── nix.nix
-    └── users/
-        └── mikail.nix
+┌── flake.nix                        SPECIFICATIONS:
+├── machine.nix                      - ASRock H110 BTC+ / Motherboard 
+└── modules/                         - GTX 1070 Ti / Discrete GPU
+    ├── display/                     - i7 6700 / CPU
+    │   └── desktop.nix              - 32gb RAM: DDR4
+    ├── services/                    
+    │   ├── audio.nix                
+    │   ├── apps.nix                 
+    │   └── core.nix                 
+    ├── system/                      
+    │   ├── boot.nix                 
+    │   ├── locale.nix               
+    │   └── nix.nix                  
+    └── users/                       
+        └── mikail.nix               MADE BY, xitofa/Abu Al-Kaatib
 ```
