@@ -1,5 +1,17 @@
-current system:
-- h110 btc+ motherboard
-- i7 6700
-- gtx 1070 ti
-- proprietary drivers
+```
+┌── flake.nix
+├── machine.nix
+└── modules/
+    ├── display/
+    │   └── desktop.nix
+    ├── services/
+    │   ├── audio.nix
+    │   ├── apps.nix
+    │   └── core.nix
+    ├── system/
+    │   ├── boot.nix
+    │   ├── locale.nix
+    │   └── nix.nix
+    └── users/
+        └── mikail.nix
+```
