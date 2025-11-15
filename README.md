@@ -13,5 +13,5 @@
     │   ├── locale.nix                       
     │   └── nix.nix                          
     └── users/                               
-        └── mikail.nix                        MADE BY, xitofa/Abu Al-Kaatib
+        └── mikail.nix                        
 ```
