@@ -13,6 +13,6 @@
     │   ├── locale.nix                       
     │   └── nix.nix                          
     └── home/                                
-        └── default.nix                      
-        ├── user.nix                         
+        ├── default.nix                      
+        └── user.nix                         
 ```
