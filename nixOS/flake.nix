@@ -26,7 +26,7 @@
           ./modules/services/apps.nix
 
           # 5. User Configuration
-          ./modules/users/mikail.nix
+          ./modules/module/default.nix
 
           # 6. System State
           ({ config, lib, ... }: {
