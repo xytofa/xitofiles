@@ -23,7 +23,6 @@
           # 4. Services
           ./modules/services/core.nix
           ./modules/services/audio.nix
-          ./modules/services/apps.nix
 
           # 5. User Configuration
           ./modules/module/default.nix
