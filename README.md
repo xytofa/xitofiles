@@ -1,9 +1,9 @@
 ```
-┌── flake.nix                                            SPECIFICATIONS:
-├── machine.nix                                  - ASRock H110 BTC+ / Motherboard 
-└── modules/                                     - GTX 1070 Ti / Discrete GPU
-    ├── display/                                 - i7 6700 / CPU
-    │   └── desktop.nix                          - 32gb RAM: DDR4
+┌── flake.nix                               
+├── machine.nix                             
+└── modules/                                
+    ├── display/                            
+    │   └── desktop.nix                     
     ├── services/                            
     │   ├── audio.nix                        
     │   ├── apps.nix                         
