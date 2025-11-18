@@ -12,6 +12,6 @@
     │   ├── boot.nix                         
     │   ├── locale.nix                       
     │   └── nix.nix                          
-    └── users/                               
-        └── mikail.nix                        
+    └── home/                               
+        └── default.nix                        
 ```
