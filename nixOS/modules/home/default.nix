@@ -1,4 +1,4 @@
-# /etc/nixos/modules/users/mikail.nix
+# /etc/nixos/modules/home/defaull.nix
 
 { pkgs, ... }:
 
