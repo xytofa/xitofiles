@@ -1,4 +1,4 @@
-# /etc/nixos/modules/core/system/users.nixos
+# /etc/nixos/modules/core/system/users.nix
 { config, lib, pkgs, ... }:
 
 {
